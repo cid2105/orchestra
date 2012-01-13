@@ -1,0 +1,103 @@
+/*
+
+	project: watchthis!
+	author: luka cvrk (www.solucija.com)
+
+*/
+
+/* global reset */
+*{ margin: 0; padding: 0; }*
+:focus, :active { outline: 0; }
+
+body { font: .9em Georgia, "Times New Roman", Sans-Serif; background: #fff url('/assets/bg.gif') repeat-x; color: #333; }
+a { color: #A82A15; text-decoration: none; }
+img { border: 0; }
+h1 {  float: left; margin: 20px 0 50px; font-size: 4em; color: #fff; }
+h2 { font-size: 2.4em; font-weight: normal; margin: 0 0 20px; }
+h2 a:hover { background: #A82A15; color: #fff; }
+.hr { color: #ccc; }
+p  { margin: 5px 0 15px; line-height: 1.6em; }
+#content { margin: 0 auto; width: 900px; }
+#top { float: right; margin: 38px 0 30px 0;}
+	#top li { list-style: none; display: inline; }
+	#top li a { float: left; padding: 6px 20px; margin: 3px 2px 0 0; color: #ccc; }
+	#top li a.current { color: #fff; background: #A82A15; }
+	#top li a:hover { background: #808080; color: #fff; }
+#intro { clear: both; padding: 15px 0 1px 20px; border: 1px solid #dedede; font-size: 1.3em; background: #eee; margin: 0 0 30px; }
+#left { float: left; width: 500px; margin: 0 0 15px; }
+#right { float: right; width: 280px; }
+#right h3 { border-bottom: 1px solid #ccc; margin: 0 0 10px; }
+#right img { margin: 0 3px 3px 0; border: 2px solid #eee; padding: 2px; }
+#right li { list-style: none; }
+	#right li a { display: block; border-bottom: 1px solid #ccc; padding: 5px 5px; }
+#footer { clear: both; padding: 15px 0; border-top: 1px solid #ccc; }
+	#r { float: right; }
+	
+div#multicolumn{
+		[-moz- | -webkit-]column-count: 3;
+		[-moz- | -webkit-]column-gap: 20px;
+		height: 350px;
+}
+
+.example-twitter:after {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent transparent #EEEEEE;
+    border-style: solid;
+    border-width: 15px;
+    content: "";
+    display: block;
+    left: 50px;
+    position: absolute;
+    top: -30px;
+    width: 0;
+}
+
+.example-twitter:before {
+    content: url("twitter-logo.gif");
+    display: block;
+    height: 36px;
+    left: 0;
+    position: absolute;
+    top: -60px;
+    width: 155px;
+}
+
+.example-twitter {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-radius: 10px 10px 10px 10px;
+    color: #333333;
+    padding: 15px;
+    position: relative;
+}
+
+blockquote {
+    margin: 1em 0;
+}
+
+
+.ui-tooltip-wiki{
+   max-width: 440px;
+}
+ 
+   .ui-tooltip-wiki .ui-tooltip-content{
+      padding: 10px;
+      
+      line-height: 12.5px;
+   }
+ 
+   .ui-tooltip-wiki h1{
+      margin: 0 0 7px;
+ 
+      font-size: 1.5em;
+      line-height: 1em;
+   }
+ 
+   .ui-tooltip-wiki img{ padding: 0 10px 0 0; }
+   
+   .ui-tooltip-wiki p{ margin-bottom: 9px; }
+   .ui-tooltip-wiki .note{ margin-bottom: 0; font-style: italic; color: #888; }
+

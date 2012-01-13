@@ -1,0 +1,60 @@
+<% content_for :nav do %>
+<%= render 'shared/navigation' %>
+<% end %>
+
+<% content_for :intro do %>
+<p>Season Schedule</p>
+<% end %>
+
+<% content_for :left do %>
+<style>
+h3
+{
+	border-bottom: 1px solid #ccc;
+	margin: 0 0 10px;
+}
+p b
+{
+	font-size:12px;
+}
+</style>
+<h3>Spring 2012 Concert</h3>
+
+<p><b>Columbia University Orchestra</b><br/>
+Jeffrey Milarsky,<i> Conductor and Music Director</i><br/>
+</p>
+<h4>Program</h4>
+<p>
+
+<b>Wolfgang Amadeus Mozart - Flute Concerto No. 1 in G Major, K. 313 (K. 285c)</b><br/>
+featuring <b>Caroline Sonett</b>, flute - Winner of the 2011-12 CUO Concerto Competition<br/>
+
+Yoshiaki Onishi, Conductor<br/>
+</p>
+<p>
+<b>Gustav Mahler - Symphony No. 4</b><br/>
+Kasia Borowiec, soprano
+
+</p>
+
+<p style="	font-size:12px;">
+Free Admission<br/>
+</p>
+<p style="	font-size:12px;">8 p.m., April 1, 2012<br/>
+Roone Arledge Auditorium in Alfred J. Lerner Hall, Columbia University<br/>
+</p>
+<p style="	font-size:12px;">8 p.m., April 3, 2012<br/>
+Miller Theatre, Columbia University</p>
+
+<% end %>
+
+<% content_for :right do %>
+<h3>Rehearsal Schedule</h3>
+<p>Rehearsals are held on Tuesdays at 6:30-9:30 p.m. in Lerner Hall, Rm. 555.<br/></p>
+<p>Click <a href="https://courseworks.columbia.edu/cms/public/courseenter.cfm?no=MUSIV1592_001_2012_1">here</a> for the weekly schedule on Columbia's Courseworks Website.
+</p>
+<% end %>
+
+<% content_for :footer do %>
+	<%= render 'shared/footer' %>
+<% end %>

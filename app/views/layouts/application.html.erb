@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Orchestra</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="content">
+		
+		<%= yield :nav %>
+		
+		<div id="intro">
+			<%= yield :intro %>
+		</div>
+		<%= yield %>
+		<div id="left">
+			
+			<%= yield :left %>
+		</div>
+		<div id="right">
+			<%= yield :right %>
+		</div>
+		
+		<div id="footer">
+					<%= yield :footer %>
+		</div>
+	</div>
+<%= yield %>
+
+</body>
+</html>

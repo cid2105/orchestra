@@ -1,0 +1,52 @@
+<% content_for :nav do %>
+<%= render 'shared/navigation' %>
+<% end %>
+
+<% content_for :intro do %>
+<p>Founded by composer Edward MacDowell in 1896, the Columbia University Orchestra is the oldest continually operating university orchestra <i>in the United States</i>. The principal mission of the Orchestra is to expose talented student musicians to the highest level of orchestral repertoire.</p>
+<% end %>
+
+<% content_for :left do %>
+	<h2><a href="#">About</a></h2>
+	<p>		
+		Running the gambit from Beethoven to Bartok, the Columibia Unviersity Orchestra is
+		no stranger to classical to modern composers. Under the capable baton of Dr. Milarsky,
+		the Columbia University Orchestra endeavors to perform the most technically challenging
+		and musically profound symphonic works composed, with a professional-caliber artistry.<br/>
+	</p>
+	<p>	Currently, rehearsals are held on Tuesdays at 6:30-9:30 p.m. in Lerner Hall, Rm. 555.
+		Unfortunately, we are no longer holding auditions for the Spring 2012 season. 
+		If you think you may be interested in joining the Columbia University Orchestra,
+		please <%= link_to "audition", page_path(:id => "auditions")%> at the start of Fall of 2012.</br>
+	</p>
+	<blockquote class="example-twitter"><a rel="facebox" href="#history">Click Here</a> to learn more about the Columbia's Premier Orchestra</blockquote>
+	<br/>
+	<p>	Questions? Feel free to contact us at <a href="mailto:cuo@columbia.edu">cuo@columbia.edu</a>.</p>
+	<br />
+	
+	<div style="display:none;" id="history">
+		<%= render :partial => "pages/history" %>
+	</div>
+
+<% end %>
+
+<% content_for :right do %>
+
+		<h3>Pictures</h3>
+		<% 6.times do |time| %>
+		<%= link_to image_tag("image#{time+1}.jpg", :alt => "site", :height => "70px;", :width => "70px;"), asset_path("image#{time+1}.jpg"),  :rel => "fancybox" %>
+		<% end %>
+		<br /><br />
+		<h3>Audio Clips</h3>
+		<p> Brahms Symphony I </p>
+		<ul>
+			<li><a href="http://www.columbia.edu/cu/cuo/F2001-6.mp3">I: Un poco sostenuto - Allegro</a></li>
+			<li><a href="http://www.columbia.edu/cu/cuo/F2001-7.mp3">II: Andante sostenuto</a></li>
+			<li><a href="http://www.columbia.edu/cu/cuo/F2001-8.mp3">III: Un poco allegretto e grazioso</a></li>
+			<li><a href="http://www.columbia.edu/cu/cuo/F2001-9.mp3">IV: Adagio - Piu andante - Allegro non troppo, ma con brio</a></li>
+		</ul>	
+<% end %>
+
+<% content_for :footer do %>
+	<%= render 'shared/footer' %>
+<% end %>
