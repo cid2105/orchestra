@@ -1,6 +1,6 @@
 <h1 style="font-size:25px; position:relative; top:20px; padding-bottom:20px;"><span class="hr">Columbia University</span> Orchestra</h1>
 	<ul id="top">
-		<% Hash["Home", "index", "Orchestra", "orchestra", "Schedule", "schedule","Audition", "audition", "History", "history"].each do |title, page_name| %>
+		<% Hash["Home", "index", "Orchestra", "orchestra", "Schedule", "schedule","Audition", "audition"].each do |title, page_name| %>
 			<% if @page.eql?("index") %>
 			<li><a href="<%= page_path(page_name)%>" <% if title.eql?("Home") %>class="current" <% end %>><%= title %></a></li> 
 			<% else %>
